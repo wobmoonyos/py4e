@@ -1,0 +1,59 @@
+,0
+0,"                         Activity Date  ... <span class=""translation_missing"" title=""translation missing: en-US.lib.export.portability_exporter.activities.horton_values.newly_explored_dirt_distance"">Newly Explored Dirt Distance</span>
+Activity ID                             ...                                                                                                                                                                                               
+1919624050    Oct 21, 2018, 6:53:46 PM  ...                                                NaN                                                                                                                                            
+1921831522    Oct 23, 2018, 1:05:03 AM  ...                                                NaN                                                                                                                                            
+1921938346    Oct 21, 2018, 6:54:09 PM  ...                                                NaN                                                                                                                                            
+1921938404    Oct 20, 2018, 3:01:03 PM  ...                                                NaN                                                                                                                                            
+1921938416   Oct 19, 2018, 12:46:01 AM  ...                                                NaN                                                                                                                                            
+...                                ...  ...                                                ...                                                                                                                                            
+6978647977    Apr 14, 2022, 3:05:25 AM  ...                                                NaN                                                                                                                                            
+6983494455    Apr 15, 2022, 3:18:48 AM  ...                                                NaN                                                                                                                                            
+6988735254    Apr 16, 2022, 3:42:56 AM  ...                                                NaN                                                                                                                                            
+6992885440    Apr 16, 2022, 5:59:52 PM  ...                                                NaN                                                                                                                                            
+6993156332    Apr 16, 2022, 7:19:17 PM  ...                                                NaN                                                                                                                                            
+
+[1250 rows x 82 columns]"
+1,"                           Elapsed Time  ... <span class=""translation_missing"" title=""translation missing: en-US.lib.export.portability_exporter.activities.horton_values.newly_explored_dirt_distance"">Newly Explored Dirt Distance</span>
+Activity Date                            ...                                                                                                                                                                                               
+Oct 21, 2018, 6:53:46 PM           4482  ...                                                NaN                                                                                                                                            
+Oct 23, 2018, 1:05:03 AM           3235  ...                                                NaN                                                                                                                                            
+Oct 21, 2018, 6:54:09 PM           4594  ...                                                NaN                                                                                                                                            
+Oct 20, 2018, 3:01:03 PM           5497  ...                                                NaN                                                                                                                                            
+Oct 19, 2018, 12:46:01 AM          4407  ...                                                NaN                                                                                                                                            
+...                                 ...  ...                                                ...                                                                                                                                            
+Apr 14, 2022, 3:05:25 AM           4288  ...                                                NaN                                                                                                                                            
+Apr 15, 2022, 3:18:48 AM           2706  ...                                                NaN                                                                                                                                            
+Apr 16, 2022, 3:42:56 AM           2704  ...                                                NaN                                                                                                                                            
+Apr 16, 2022, 5:59:52 PM           2609  ...                                                NaN                                                                                                                                            
+Apr 16, 2022, 7:19:17 PM           2486  ...                                                NaN                                                                                                                                            
+
+[1250 rows x 65 columns]"
+2,"          Minutes_Decimals  Total_Time  Total_Time_Hrs
+Distance                                              
+5.2              44.433333   44.433333        0.740556
+10.4             46.216667   90.650000        1.510833
+15.6             50.250000  140.900000        2.348333
+20.8             56.033333  196.933333        3.282222
+26.0             60.033333  256.966667        4.282778
+31.2             60.066667  317.033333        5.283889"
+3,"                                                   0
+0                             Button        X    ...
+1                             Button        X    ...
+2       Reading  Load [gF]  Time [sec.]\n0       ...
+3                                                ...
+4    Aid Station Name  Cutoff Hour  ...  NGP Min/..."
+4,"                  Cutoff Hour  Cutoff Mileage  ...  NGP Min/Mi  GP Min/Mi
+Aid Station Name                               ...                       
+Jones                    14.0            42.0  ...   20.000000        NaN
+Jones 2                  16.5            49.4  ...   20.040486  20.270270
+Elk 2                    20.5            60.5  ...   20.330579  21.621622
+Idiot 2                  23.0            67.8  ...   20.353982  20.547945
+Uni                      29.5            84.2  ...   21.021378  23.780488
+Storey Burn 3            31.0            88.4  ...   21.040724  21.428571
+Finish                   34.0           100.2  ...   20.359281  15.254237
+
+[7 rows x 6 columns]"
+5,"   B  C
+A      
+4  5  6"
