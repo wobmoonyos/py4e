@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import gpxpy
+import math
 from sympy import fft
 #from pandasgui import show
 gpx = gpxpy.parse(open('C:/Users/14253/Desktop/py4e/Wyeast.gpx'))
@@ -74,11 +75,38 @@ df['Tared_Lat']= df.loc[:,'Latitude']-df.loc[0,'Latitude']
 df['Tared_Long']= df.loc[:,'Longitude']-df.loc[0,'Longitude']
 df['Scaled_Lat']= 69*df.loc[:,'Tared_Lat']
 df['Scaled_Long']=69.172*df.loc[:,'Tared_Long']
+df['Diff_Scaled_Lat'] = np.absolute(df.loc[:,'Scaled_Lat'].diff())
+df[0,'Diff_Scaled_Lat'] = 0
+df['Diff_Scaled_Long'] = np.absolute(df.loc[:,'Scaled_Long'].diff())
+df[0,'Diff_Scaled_Long'] = 0
+df['RSS_Diff']= np.sqrt(df.loc[:,'Diff_Scaled_Lat']**2+df.loc[:,'Diff_Scaled_Long']**2)
+df['Sum_RSS'] = np.cumsum(df.loc[:,'RSS_Diff'])
+df['Theta']= np.arctan(df.loc[:,'Diff_Scaled_Lat']/df.loc[:,'Diff_Scaled_Long'])
+df['Delta_Theta']= df.loc[:,'Theta'].diff()
 
-plt.scatter(df.loc[:,"Scaled_Lat"],df.loc[:,"Scaled_Long"])
+plt.scatter(df.loc[:,'Sum_RSS'],df.loc[:,"Delta_Theta"],s=20)
 plt.grid()
+plt.xlabel("Distance (Miles)",fontsize=24)
+plt.ylabel("Delta Theta (Radians)",fontsize=24)
+plt.title("Delta Direction (Angle) versus Distance",fontsize=30)
+
 plt.show()
+
+
+
+#calling x longitude and y latitude
+"""
+plt.scatter(df.loc[:,"Scaled_Long"],df.loc[:,"Scaled_Lat"])
+plt.grid()
+plt.xlabel("X Distance (Miles)",fontsize=24)
+plt.ylabel("Y Distance (Miles)",fontsize=24)
+plt.title("Wy'east Howl Course Map (Miles x Miles)",fontsize=30)
+plt.yticks(np.arange(min(df.loc[:,'Scaled_Lat']), max(df.loc[:,'Scaled_Lat'])+1, .5))
+plt.xticks(np.arange(min(df.loc[:,'Scaled_Long']), max(df.loc[:,'Scaled_Long'])+1, .5))
+plt.show()
+"""
 print(df)
+
 
 """
 write a method to calculate turns and aggresiveness in XY
